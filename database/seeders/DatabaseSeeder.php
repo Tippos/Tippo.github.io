@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\course_rqs;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,9 +14,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+
         $this->call([
-           usersSeeder::class,
+            UsersSeeder::class,
+
         ]);
+        \App\Models\users::factory(55)->create();
     }
 }

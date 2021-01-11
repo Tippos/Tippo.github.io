@@ -23,8 +23,8 @@ class CreateCourseRqsTable extends Migration
             $table->tinyInteger('outCondition')->require();
             $table->string('nowSkill')->require();
             $table->string('mission')->require();
-            $table->unsignedBigInteger('userId')->unique();
-            $table->unsignedBigInteger('classId')->unique();
+            $table->unsignedBigInteger('userId');
+            $table->unsignedBigInteger('classId');
             $table->foreign('userId')->references('id')->on('users');
             $table->foreign('classId')->references('id')->on('classes');
             $table->tinyInteger('status')->default(3);

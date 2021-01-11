@@ -18,8 +18,8 @@ class CreateClassesTable extends Migration
             $table->string('name', 100)->require();
             $table->string('avatar')->require();
             $table->tinyInteger('status')->default(1);
-            $table->unsignedBigInteger('userId')->unique();
-            $table->unsignedBigInteger('subjectId')->unique();
+            $table->unsignedBigInteger('userId');
+            $table->unsignedBigInteger('subjectId');
             $table->foreign('userId')->references('id')->on('users');
             $table->foreign('subjectId')->references('id')->on('subjects');
             $table->timestamps();
