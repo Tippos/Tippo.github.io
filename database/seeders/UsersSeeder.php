@@ -25,10 +25,10 @@ class UsersSeeder extends Seeder
                 'job'         => 'Student',
                 'avatar'      => 'https://scontent.fhan2-2.fna.fbcdn.net/v/t1.0-9/120472565_849815579091961_8713095487069521055_o.jpg?_nc_cat=106&ccb=2&_nc_sid=09cbfe&_nc_ohc=n0w0OMHoRKkAX_EIhlg&_nc_ht=scontent.fhan2-2.fna&oh=34c2dafa38f10308315d926a3ba5d722&oe=601F9EE6',
                 'facebook'    => 'https://www.facebook.com/tiencuns1/',
-                'gender'      => 1,
+                'gender'      => GENDER_MALE,
                 'country'     => 'Viet Nam',
-                'role'        => 1,
-                'status'      => 1,
+                'role'        => ROLE_USER_ADMIN,
+                'status'      => STATUS_USER_ACTIVE,
                 'created_at'  => now(),
             ],
             [
@@ -40,10 +40,10 @@ class UsersSeeder extends Seeder
                 'job'         => 'Student',
                 'avatar'      => 'https://scontent.fhan2-2.fna.fbcdn.net/v/t1.0-9/120472565_849815579091961_8713095487069521055_o.jpg?_nc_cat=106&ccb=2&_nc_sid=09cbfe&_nc_ohc=n0w0OMHoRKkAX_EIhlg&_nc_ht=scontent.fhan2-2.fna&oh=34c2dafa38f10308315d926a3ba5d722&oe=601F9EE6',
                 'facebook'    => 'https://www.facebook.com/tiencuns1/',
-                'gender'      => 1,
+                'gender'      => GENDER_MALE,
                 'country'     => 'Viet Nam',
-                'role'        => 1,
-                'status'      => 1,
+                'role'        => ROLE_USER_ADMIN,
+                'status'      => STATUS_USER_ACTIVE,
                 'created_at'  => now(),
             ]
 
