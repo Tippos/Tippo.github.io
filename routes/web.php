@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\userController;
+use App\Http\Controllers\ClassesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,13 @@ use App\Http\Controllers\userController;
 */
 
 Route::get('/user', [userController::class, 'getListUser']);
+Route::get('/class',[ClassesController::class, 'getListClass']);
+
+Route::get('',function(){
+    return view('home');
+}
+);
 Route::get('/home',function(){
-    return view('layout');
+    return view('home');
 }
 );

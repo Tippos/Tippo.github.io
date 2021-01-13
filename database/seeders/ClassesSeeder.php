@@ -27,7 +27,7 @@ class ClassesSeeder extends Seeder
             [
                 'id'         => 2,
                 'name'       => 'L02',
-                'avatar'     => 'https://thuocdongytot.com/wp-content/uploads/2020/04/number-2-icon-png-18.png',
+                'avatar'     => 'https://phongthuynhapho.com/wp-content/uploads/2017/01/con-so-2.jpg',
                 'status'     => STATUS_CLASS_ACTIVE,
                 'userId'     => 3,
                 'subjectId'  => 2,

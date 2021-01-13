@@ -12,5 +12,6 @@ class userController extends Controller
       //Lay du lieu tu database
         $list_user=users::all();
         return view('listUser',compact('list_user'));
+
     }
 }

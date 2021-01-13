@@ -16,9 +16,20 @@
     </style>
 
     <style>
-        body {
-
+        .body-web {
+            margin-top: 50px;
             font-family: 'Nunito';
+            display: flex;
+        }
+        .header img {
+            width: 200px;
+        }
+        .body-web .right{
+            font-family: Apple;
+            width: 200px;
+        }
+        .body-web .right .style-hover:hover{
+            background-color: lightblue;
         }
         .content{
             width:1360px;
@@ -28,19 +39,47 @@
             color:green;
         }
         .status-style-2{
+            color:grey;
+        }
+        .status-style-3{
             color:red;
         }
+        .status-style-4{
+            color: blue;
+        }
+        .home {
+            display:flex;
+        }
+        .home .home-right:hover{
+            transform: scale(1.01);
+        }
+        .home .home-left{
+            padding-left: 20px;;
+        }
+        .home .home-left .top:hover{
+            transform: scale(1.01);
+        }
+        .home .home-left .bot:hover{
+            transform: scale(1.01);
+        }
+
     </style>
 </head>
 <body class="Tippo">
+<div class="header">
+    <a href="/">
+        <img  src="https://sainboltapp.web.app/static/media/LogoSidebar.53b25a64.png" alt="">
+    </a>
 
-
+</div>
+<div class="body-web">
+<div class="right">
 <div class="d-flex align-items-start">
     <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-        <a class="nav-link active" >Home</a>
-        <a class="nav-link" >Users List</a>
-        <a class="nav-link" >Classes </a>
-        <a class="nav-link" >Point</a>
+        <a class="nav-link {{checkActiveMenu("/home")}} style-hover " href="/home">Home</a>
+        <a class="nav-link {{checkActiveMenu("/user")}} style-hover" href="/user">Users List</a>
+        <a class="nav-link {{checkActiveMenu("/class")}} style-hover" href="/class" >Classes </a>
+        <a class="nav-link style-hover " >Point</a>
     </div>
     <div class="tab-content" id="v-pills-tabContent">
         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
@@ -49,10 +88,11 @@
         <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
     </div>
 </div>
+</div>
 <div class="content">
     @yield('content')
 </div>
-
+</div>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>

@@ -44,17 +44,17 @@
                     Course
                 @endif
             </td>
-            <td class="status-style-{{$user->role}}">
-                @if($user->role==1)
+            <td class="status-style-{{$user->status}}">
+                @if($user->status==1)
                     Active
                 @endif
-                @if($user->role==2)
+                @if($user->status==2)
                     Unactive
                     @endif
-                @if($user->role==3)
+                @if($user->status==3)
                     Lock
                     @endif
-                @if($user->role==4)
+                @if($user->status==4)
                     New
                     @endif
             </td>
