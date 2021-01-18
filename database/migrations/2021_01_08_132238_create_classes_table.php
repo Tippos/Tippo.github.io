@@ -17,7 +17,7 @@ class CreateClassesTable extends Migration
             $table->bigIncrements('id')->unique();
             $table->string('name', 100)->require();
             $table->string('avatar')->require();
-            $table->tinyInteger('status')->default(1);
+            $table->tinyInteger('status')->default(STATUS_CLASS_ACTIVE);
             $table->unsignedBigInteger('userId');
             $table->unsignedBigInteger('subjectId');
             $table->foreign('userId')->references('id')->on('users');

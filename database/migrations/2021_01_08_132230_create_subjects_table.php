@@ -19,7 +19,7 @@ class CreateSubjectsTable extends Migration
             $table->string('description')->unique();
             $table->string('avatar')->require();
             $table->string('facebook')->require();
-            $table->tinyInteger('status')->default(1);
+            $table->tinyInteger('status')->default(STATUS_SUBJECT_ACTIVE);
             $table->unsignedBigInteger('userId');
             $table->foreign('userId')->references('id')->on('users');
             $table->timestamps();

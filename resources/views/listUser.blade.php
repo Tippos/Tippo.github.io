@@ -38,23 +38,23 @@
             </td>
             <td style="max-width: 100px;">{{$user->country}}</td>
             <td>
-                @if($user->role==1)
+                @if($user->role==ROLE_USER_ADMIN)
                     Admin
                 @else
                     Course
                 @endif
             </td>
             <td class="status-style-{{$user->status}}">
-                @if($user->status==1)
+                @if($user->status==STATUS_USER_ACTIVE)
                     Active
                 @endif
-                @if($user->status==2)
+                @if($user->status==STATUS_USER_UNACTIVE)
                     Unactive
                     @endif
-                @if($user->status==3)
+                @if($user->status==STATUS_USER_LOCK)
                     Lock
                     @endif
-                @if($user->status==4)
+                @if($user->status==STATUS_USER_PENDING)
                     New
                     @endif
             </td>

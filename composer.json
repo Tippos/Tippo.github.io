@@ -37,6 +37,7 @@
         "files": [
             "app/common/const.php",
             "app/common/check_active.php"
+
         ],
         "psr-4": {
             "App\\": "app/",

@@ -78,8 +78,9 @@
     <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
         <a class="nav-link {{checkActiveMenu("/home")}} style-hover " href="/home">Home</a>
         <a class="nav-link {{checkActiveMenu("/user")}} style-hover" href="/user">Users List</a>
+        <a class="nav-link style-hover{{checkActiveMenu("/subject")}}  " href="/subject" >Subject</a>
         <a class="nav-link {{checkActiveMenu("/class")}} style-hover" href="/class" >Classes </a>
-        <a class="nav-link style-hover " >Point</a>
+
     </div>
     <div class="tab-content" id="v-pills-tabContent">
         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>

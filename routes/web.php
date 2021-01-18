@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\userController;
 use App\Http\Controllers\ClassesController;
-
+use App\Http\Controllers\SubjectsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +17,12 @@ use App\Http\Controllers\ClassesController;
 
 Route::get('/user', [userController::class, 'getListUser']);
 Route::get('/class',[ClassesController::class, 'getListClass']);
+Route::get('/subject',[SubjectsController::class,'getListSubject']);
+
+Route::post('/addUser', [userController::class, 'addUser']);
+Route::post('/addClass', [ClassesController::class, 'addClass']);
+Route::post('/addSubject', [SubjectsController::class, 'addSubject']);
+
 
 Route::get('',function(){
     return view('home');

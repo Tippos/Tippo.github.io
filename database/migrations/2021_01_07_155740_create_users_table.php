@@ -25,7 +25,7 @@ class CreateUsersTable extends Migration
             $table->tinyInteger('gender')->require();
             $table->string('country', 50)->require();
             $table->tinyInteger('role')->require();
-            $table->tinyInteger('status')->default(4);
+            $table->tinyInteger('status')->default(STATUS_USER_PENDING);
             $table->timestamps();
         });
     }

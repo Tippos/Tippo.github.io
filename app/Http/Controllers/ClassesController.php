@@ -18,4 +18,14 @@ class ClassesController extends Controller
         $list_subject_class=subjects::all();
         return view('listClass', compact('list_class','list_user_class','list_subject_class'));
     }
+    public function addClass(Request $request){
+        $add_cl= new classes();
+        $add_cl->name=$request->input('name');
+        $add_cl->avatar=$request->input('avatar');
+        $add_cl->status=$request->input('status');
+        $add_cl->userId=$request->input('userId');
+        $add_cl->subjectId=$request->input('subjectId');
+        $add_cl->save();
+
+    }
 }

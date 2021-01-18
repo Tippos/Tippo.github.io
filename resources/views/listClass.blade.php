@@ -29,13 +29,13 @@
                        @endforeach
                </td>
                 <td class="status-style-{{$class->status}}">
-                    @if($class->status==1)
+                    @if($class->status==STATUS_CLASS_ACTIVE)
                         Active
                     @endif
-                    @if($class->status==2)
+                    @if($class->status==STATUS_CLASS_UNACTIVE)
                         Unactive
                     @endif
-                    @if($class->status==3)
+                    @if($class->status==STATUS_CLASS_REGISTERING)
                         Registering
                     @endif
 
